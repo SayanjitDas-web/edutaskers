@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <title>edutaskers.com</title>
+</head>
+<body>
+   <header>
+      <nav>
+        <h2>Edutaskers</h2>
+        <ul id="nav-ul">
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <label for="Services" id="service-lable">Services</label> 
+                <select id="Services" onchange="window.location.href=this.value">
+                      <option value="#" id="selected-option" selected>Services</option>
+                      <option value="./services.html">Services</option>
+                      <option value="./pptmaker.html">PPT</option>
+                      <option value="#">LOGO</option>
+                      <option value="#">REPORTS</option>
+                      <option value="#">PROBLEMS</option>
+                </select>
+            </li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="./account.html">Account</a></li>
+        </ul>
+      </nav>
+      <section id="hero-section">
+        <div id="hero-part-1">
+            <h1>Edutaskers.com</h1>
+            <h3 id="hero-text-ad">The platform students want</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div id="hero-part-2"><img src="./image/4882404.jpg" alt="hero-image"></div>
+      </section>
+   </header>
+   <main>
+    <h1 class="headings">Services</h1>
+    <section id="services">
+        <div class="service-card" id="ppt-making">
+            <div class="image-wrapper">
+                <img src="./image/4325315.jpg" alt="card-image" class="service-images">
+            </div>
+            <h2 class="service-name">MAKE PPT</h2>
+            <a href="./pptmaker.html">Hime Now</a>
+        </div>
+        <div class="service-card" id="logo-making">
+            <div class="image-wrapper">
+                <img src="./image/2001.i039.031_branding_isometric_concept_icons-12.jpg" alt="card-image" class="service-images">
+            </div>
+            <h2 class="service-name">MAKE LOGO</h2>
+            <a href="#">Hime Now</a>
+        </div>
+        <div class="service-card" id="problem-solving">
+            <div class="image-wrapper">
+                <img src="./image/Idea_concept.jpg" alt="card-image" class="service-images">
+            </div>
+            <h2 class="service-name">SOLVE PROBLEMS</h2>
+            <a href="#">Hime Now</a>
+        </div>
+        <div class="service-card" id="report-writting">
+            <div class="image-wrapper">
+                <img src="./image/8850917.jpg" alt="card-image" class="service-images">
+            </div>
+            <h2 class="service-name">MAKE REPORT</h2>
+            <a href="#">Hime Now</a>
+        </div>
+    </section>
+   </main>
+</body>
+<script src="./js/index.js"></script>
+</html>

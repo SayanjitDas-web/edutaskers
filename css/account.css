@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#service-lable{
+    display: none;
+}
+
+#selected-option{
+    display: none;
+}
+
+:root {
+    --btnPadding: 0.5rem 1rem;
+    --btnBorderRadius: 5px;
+    --serviceCardBorderRadius: 10px;
+    --serviceBtnPadding: 0.5rem 1rem;
+    --serviceBtnMargin: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h2 {
+    font-family: "Sofia", sans-serif;
+    padding: 1rem;
+}
+
+header nav #nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+header nav #nav-ul select{
+    border: none;
+}
+
+header nav #nav-ul select option{
+    padding: 10px;
+}
+
+header nav #nav-ul li {
+    padding: 0.5rem 0.7rem;
+}
+
+header nav #nav-ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--btnPadding);
+    transition: background-color 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+header nav #nav-ul li a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+header nav #nav-ul li a:hover::before {
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+main h1{
+    width: 95%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+main section #part-1 ul{
+    width: 300px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+main section #part-1 ul li{
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px solid black;
+}
+
+main section #part-1 ul li:nth-child(6){
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: none;
+}
+
+main section #part-1 ul li:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+main section #part-1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main section #part-2{
+    min-width: 300px;
+    max-width: 800px;
+    margin-left: 25px;
+}
+
+#part-2 p{
+    font-size: large;
+}
+
+#part-2 p:nth-child(2){
+    margin: 20px 0px;
+}
+
+main section #part-2 a{
+    text-decoration: none;
+}
+
+main section #part-2 #dashboard-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

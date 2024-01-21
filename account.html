@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./css/account.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <h2>Edutaskers</h2>
+          <ul id="nav-ul">
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <label for="Services" id="service-lable">Services</label> 
+                <select id="Services" onchange="window.location.href=this.value">
+                    <option value="#" id="selected-option" selected>Services</option>
+                    <option value="./services.html">Services</option>
+                      <option value="./pptmaker.html">PPT</option>
+                    <option value="#">LOGO</option>
+                    <option value="#">REPORTS</option>
+                    <option value="#">PROBLEMS</option>
+                  </select>
+              </li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+              <li><a href="#">Cart</a></li>
+          </ul>
+        </nav>
+     </header>
+    <main>
+        <h1>My account</h1>
+        <section>
+            <div id="part-1">
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Addresses</a></li>
+                    <li><a href="#">Account Details</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+            <div id="part-2">
+                <p>Hello <b>admin</b> (not <b>admin</b>? 
+                    <a href="#">Log Out</a>
+                )</p>
+                <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                <a id="dashboard-btn" href="#">Go to Vendor Dashboard</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

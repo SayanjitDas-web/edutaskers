@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <h2>Edutaskers</h2>
+          <ul id="nav-ul">
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <label for="Services" id="service-lable">Services</label> 
+                <select id="Services" onchange="window.location.href=this.value">
+                    <option value="#" id="selected-option" selected>Services</option>
+                    <option value="./services.html">Services</option>
+                      <option value="./pptmaker.html">PPT</option>
+                    <option value="#">LOGO</option>
+                    <option value="#">REPORTS</option>
+                    <option value="#">PROBLEMS</option>
+                  </select>
+              </li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="./account.html">Account</a></li>
+          </ul>
+        </nav>
+     </header>
+     <main>
+        <h1 class="title">Dashboard</h1>
+        <section id="dashboard">
+            <nav>
+                <ul id="nav-ul">
+                    <li>Dashboard</li>
+                    <li>Products</li>
+                    <li>Orders</li>
+                    <li>Withdraw</li>
+                    <li>Store Setting</li>
+                    <li>Payment</li>
+                </ul>
+            </nav>
+            <div id="nav-body">
+                <div class="nav-body-member" id="part-1">
+                     <ul>
+                        <li>
+                            <span>Net Sales</span>
+                            <span>₹0.00</span>
+                        </li>
+                        <li>
+                            <span>Earning</span>
+                            <span>₹0.00</span>
+                        </li>
+                        <li>
+                            <span>Pageview</span>
+                            <span>5</span>
+                        </li>
+                        <li>
+                            <span>Order</span>
+                            <span>0</span>
+                        </li>
+                     </ul>
+                </div>
+                <div class="nav-body-member" id="part-2">
+                    <ul>
+                        <li>Orders</li>
+                        <li>
+                            <span>Total</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Completed</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Pending</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Processing</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Cancelled</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Refunded</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>On hold</span>
+                            <span>0</span>
+                        </li>
+                     </ul>
+                </div>
+                <div class="nav-body-member" id="part-3">
+                    <ul>
+                        <li>
+                            <span>Products</span>
+                            <span>+ Add new products</span>
+                        </li>
+                        <li>
+                            <span>Total</span>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <span>Live</span>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <span>Offline</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>Pending Review</span>
+                            <span>0</span>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </section>
+     </main>
+</body>
+</html>

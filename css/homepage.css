@@ -1,0 +1,286 @@
+:root {
+    --btnPadding: 0.5rem 1rem;
+    --btnBorderRadius: 5px;
+    --serviceCardBorderRadius: 10px;
+    --serviceBtnPadding: 0.5rem 1rem;
+    --serviceBtnMargin: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Space+Grotesk:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#service-lable{
+    display: none;
+}
+
+#selected-option{
+    display: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-family: "Sofia", sans-serif;
+    padding: 1rem;
+}
+
+nav #nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav #nav-ul select{
+    border: none;
+}
+
+nav #nav-ul select option{
+    font-size: large;
+    padding: 10px;
+}
+
+nav #nav-ul li {
+    padding: 0.5rem 0.7rem;
+}
+
+nav #nav-ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--btnPadding);
+    transition: background-color 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+nav #nav-ul li a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+nav #nav-ul li a:hover::before {
+    width: 100%;
+}
+
+#hero-section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-part-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+#hero-part-1 h1{
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    color:darkslateblue;
+}
+
+#hero-part-1 h3{
+    margin-top: -10px;
+    font-size: xx-large;
+}
+
+#hero-part-1 p {
+    width: 85%;
+    font-family: 'Comfortaa', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    margin-top: 2px;
+}
+
+#hero-part-2 {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#hero-part-2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--serviceCardBorderRadius);
+}
+
+main {
+    width: 100%;
+}
+
+.headings {
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+    margin: 1rem;
+    border-bottom: 2px solid black;
+}
+
+#services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-card {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--serviceCardBorderRadius);
+}
+
+.service-card .image-wrapper {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card .image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.service-card .service-name {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.service-card a {
+    text-decoration: none;
+    padding: var(--serviceBtnPadding);
+    border-radius: var(--btnBorderRadius);
+    margin: var(--serviceBtnMargin);
+}
+
+#ppt-making{
+    border: 2px solid purple;
+}
+
+#ppt-making a {
+    background-color: purple;
+    color: white;
+}
+
+#ppt-making .service-name{
+    color: purple;
+}
+
+#logo-making{
+    border: 2px solid hotpink;
+}
+
+#logo-making a {
+    background-color: hotpink;
+    color: white;
+}
+
+#logo-making .service-name{
+    color: hotpink;
+}
+
+#problem-solving{
+    border: 2px solid orange;
+}
+
+#problem-solving a {
+    background-color: orange;
+    color: white;
+}
+
+#problem-solving .service-name{
+    color: orange;
+}
+
+#report-writting{
+    border: 2px solid rgb(35, 206, 109);
+}
+
+#report-writting a {
+    background-color: rgb(35, 206, 109);
+    color: white;
+}
+
+#report-writting .service-name{
+    color: rgb(35, 206, 109);
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-part-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-part-1 p {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
